@@ -39,6 +39,17 @@ Visit [http://www.wildtreetech.com](www.wildtreetech.com).
 
 # Let's go!
 
+Today is all about building a foundation.
+* Introduction to numpy and matplotlib
+* Standard machine-learning workflow
+* over- and underfitting
+* performance measures
+* the world's simplest neural net
+* classifying fashion with keras
+
+Tomorrow: pretrained model and NNs from scratch
+
+Wednesday: image specific operators, transfer learning
 ---
 
 # Netflix
@@ -196,7 +207,7 @@ Isn’t it all just hype?
 
 # Neural Networks as feature transformers
 
-neural-networks-as-feature-extractors.ipynb
+How to solve the circle-incircle problem with a linear classifier?
 
 http://playground.tensorflow.org/#activation=relu&batchSize=17&dataset=circle&regDataset=reg-plane&learningRate=0.1&regularizationRate=0&noise=10&networkShape=3&seed=0.14077&showTestData=false&discretize=false&percTrainData=50&x=true&y=true&xTimesY=false&xSquared=false&ySquared=false&cosX=false&sinX=false&cosY=false&sinY=false&collectStats=false&problem=classification&initZero=false&hideText=false
 
