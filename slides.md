@@ -865,6 +865,16 @@ with different optimisers. Get your feet wet with keras.
 
 ---
 
+# Intuition about what NNs are doing
+
+This is a good (but mind bending) article about how to think about why it is that neural entworks can solve problems that can't be solved with a linear classifier:
+http://colah.github.io/posts/2014-03-NN-Manifolds-Topology/
+
+In particular the example towards the end which illustrates how to
+solve a 1D problem.
+
+---
+
 class: middle,center
 # Let's build a neural network from scratch
 
@@ -1075,7 +1085,11 @@ class: middle, center
 
 # The plan
 
+* convolutions and image specific operators
 * pretrained models in keras
+* transfer learning
+* auto encoders
+* spotting boats or planes
 
 ---
 
@@ -1175,7 +1189,7 @@ Two layers of convolution and pooling implemented using keras.
 ---
 # Convolutions illustrated
 
-image-convolutions-with-keras.ipynb
+`20-image-convolutions-with-keras.ipynb`
 
 ---
 
@@ -1458,18 +1472,19 @@ have either. What to do?
 * Treat a whole network as a "feature transformer"
 * Use the last or second to last layer as input features to a logistic regression
   or a small neural network which is trained on our small dataset
-* teachable machine demo
+* http://teachablemachine.withgoogle.com/
 
 ---
 
-# Transfer learning
+# How does the teachable machine work?
 
-.center.width-80[![](images/vgg.png)]
+Process camera input through a small, fast, made for mobile neural network
+that was trained on ImageNet.
 
-* Treat a whole network as a "feature transformer"
-* Use the last or second to last layer as input features to a logistic regression
-  or a small neural network which is trained on our small dataset
-* http://teachablemachine.withgoogle.com/
+Take the output of the NN and treat it as features, fit a Logistic Regression
+to do the actual classification.
+
+Checkout `learning_game.py` to do it yourself.
 
 ---
 
@@ -1512,3 +1527,13 @@ What is the left picture? What is the right picture?
 # What do you see?
 
 .center.width-100[![](images/Two_silhouette_profile_or_a_white_vase.jpg)]
+
+---
+
+# Thank you!
+
+---
+
+class: bottom, center
+
+Fin.
